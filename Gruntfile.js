@@ -123,22 +123,22 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      js: ["assets/**/*.js"],
-      css: ["assets/**/*.css"]
+      js: ["dist/**/*.js"],
+      css: ["dist/**/*.css"]
     },
 
 
 
-    // work in assets
+    // work in dist
 
     copy: {
       options: {},
       dist: {
         files: {
-          'assets/main/vendor.js': ['tmp/main/vendor.js'],
-          'assets/main/index.js': ['tmp/main/index.min.js'],
-          'assets/main/index.css': ['tmp/main/index.min.css'],
-          'assets/main/template.js': ['tmp/main/template.min.js']
+          'dist/main/vendor.js': ['tmp/main/vendor.js'],
+          'dist/main/index.js': ['tmp/main/index.min.js'],
+          'dist/main/index.css': ['tmp/main/index.min.css'],
+          'dist/main/template.js': ['tmp/main/template.min.js']
         }
       }
     },
